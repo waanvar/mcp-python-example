@@ -1,17 +1,19 @@
 # MCP Python Example
 
-ตัวอย่างนี้แสดงการใช้งาน Model Context Protocol (MCP) ด้วย Python
+This example shows how to implement a Model Context Protocol (MCP) in Python and integrate with different LLM backends:
 
-## การติดตั้ง
+-   **OpenAI** via SDK v1.x (`OpenAI(api_key).chat.completions.create()`)
+-   **Local LLaMA** via `llama-cpp-python`
 
-1. สร้าง virtual environment:
+## Setup
 
+1. Create a virtual environment and activate:
     ```bash
     python3 -m venv venv
-    source venv/bin/activate   # Linux/Mac
-    venv\\Scripts\\activate    # Windows
-    ```
+    source venv/bin/activate    # Linux/Mac
+    venv\\Scripts\\activate   # Windows
 
+    ```
 2. Install lib
 
     ```bash

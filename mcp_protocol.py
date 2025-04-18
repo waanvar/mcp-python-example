@@ -1,5 +1,5 @@
-from typing import List, Optional, Any
-from pydantic import BaseModel, Field
+from typing import List, Optional
+from pydantic import BaseModel
 from datetime import datetime, timezone
 
 class Header(BaseModel):
