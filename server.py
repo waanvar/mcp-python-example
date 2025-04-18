@@ -12,11 +12,11 @@ async def handle_mcp(req: MCPRequest):
     
     resp_header = make_header(req.header.context_id)
     response_msg = SessionMessage(role="assistant", content=reply_text)
-    
+
     # Build MCPResponse and return as dict to satisfy Pydantic validation
     mcp_response = MCPResponse(header=resp_header, response=response_msg)
     return mcp_response.dict()
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvciorn.run(app, host="0.0.0.0", port=8000)
